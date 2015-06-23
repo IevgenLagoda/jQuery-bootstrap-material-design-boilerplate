@@ -1,0 +1,84 @@
+li.topic {
+    border-bottom: 1px solid $grey;
+    padding: 10px;
+    h2 {
+        margin-top: 0;
+    }
+    .response {
+        padding: 10px 0 10px 10px;
+    }
+    ul.responses {
+        padding-left: 0;
+    }
+    .response-footer {
+        padding-bottom: 5px;
+        margin-right: 20px;
+    }
+    .media {
+        margin-top: 10px;
+    }
+    .time-relative {
+        margin-right: 20px;
+    }
+}
+.row-even {
+    background-color: lighten($grey, 17%);
+}
+.row-odd {
+    background-color: white;
+}
+.navbar {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 0 solid $grey !important;
+    position: relative;
+    margin: 1.5em 10px;
+    padding: 0;
+    quotes: '\201c' '\201d';
+    text-align: left;
+    line-height: 14px;
+    margin-right: 30px;
+    p {
+        font-style: italic;
+        margin-left: 15px;
+        margin-top: -22px;
+        margin-bottom: 0;
+        padding: 0;
+        line-height: 19px;
+        display: inherit;
+        color: $grey-2;
+    }
+    &:before {
+        content: open-quote;
+        color: lighten($grey, 10%);
+        font-size: $quote-font-size;
+        vertical-align: -18px;
+        /* margin-top: 15px; */
+    }
+    &:after {
+        color: lighten($grey, 10%);
+        content: close-quote;
+        font-size: $quote-font-size;
+        bottom: -33px;
+        right: -13px;
+        position: absolute;
+    }
+}
+.media-left {
+    display: none;
+}
+@media (min-width: $screen-xs-min) {
+    
+}
+@media (min-width: $screen-sm-min) {
+
+}
+@media (min-width: $screen-md-min) {
+    .media-left {
+        display: table-cell;
+    }
+}
+@media (min-width: $screen-lg-min) {
+
+}
